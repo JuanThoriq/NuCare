@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuCare</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/dietPage.css">
+    <link rel="stylesheet" href="./css/calculatorPage.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><span style="color: black;">Nu</span>Care</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Basic Nutrition</a></li>
+                <li><a href="#">Health Condition</a></li>
+                <li><a href="#">Diet Health</a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu" id="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" id="close-btn">×</button>
+            <ul>
+                <li><a href="#">Basic Nutrition</a></li>
+                <li><a href="#">Health Condition</a></li>
+                <li><a href="#">Diet Health</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <a href="#">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <div class="category-menu">
+        <div class="diet-menu">
+            <a href="#" id="diet-link" class="menu-link">Diet</a>
+        </div>
+        <div class="calcu-menu">
+            <a href="#" id="calculator-link" class="menu-link">Calculator</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section id="diet-information" class="diet-information">
+            <div class="title-diet">
+                <p>DIET INFORMATION</p>
+                <h1>Learn About Various <span>Diet </span>Types</h1>
+            </div>
+            <div class="main-diet">
+                <div class="choose-diet" id="choose-diet">
+                    <h2>Choose Your <span>Diet</span></h2>
+                    <div id="overlay" class="overlay"></div>
+                </div>
+                <div class="hero-diet">
+                    <img src="./Assets/DietHealth/Right Diet Health Hero Section.png" alt="">
+                </div>
+            </div>
+            
+            <div class="diet-carousel">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide">
+                            <div class="diet-box">
+                                <img src="./Assets/DietHealth/icon-Diet.png" width="48px"  alt="icon">
+                                <h4>Keto Diet</h4>
+                                <button class="seemore-button" onclick="showDietInfo('Keto Diet')">See More</button>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="diet-box">
+                                <img src="./Assets/DietHealth/icon-Diet.png" width="48px"  alt="icon">
+                                <h4>Mediterranean Diet</h4>
+                                <button class="seemore-button" onclick="showDietInfo('Mediterranean Diet')">See More</button>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="diet-box">
+                                <img src="./Assets/DietHealth/icon-Diet.png" width="48px"  alt="icon">
+                                <h4>Vegan Diet</h4>
+                                <button class="seemore-button" onclick="showDietInfo('Vegan Diet')">See More</button>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="diet-box">
+                                <img src="./Assets/DietHealth/icon-Diet.png" width="48px"  alt="icon">
+                                <h4>Paleo Diet</h4>
+                                <button class="seemore-button" onclick="showDietInfo('Paleo Diet')">See More</button>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="diet-box">
+                                <img src="./Assets/DietHealth/icon-Diet.png" width="48px"  alt="icon">
+                                <h4>Dash Diet</h4>
+                                <button class="seemore-button" onclick="showDietInfo('Dash Diet')">See More</button>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="diet-box">
+                                <img src="./Assets/DietHealth/icon-Diet.png" width="48px"  alt="icon">
+                                <h4>Intermittent Diet</h4>
+                                <button class="seemore-button" onclick="showDietInfo('Intermittent Diet')">See More</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-button left-button">&#9664;</button>
+                <button class="carousel-button right-button">&#9654;</button>
+            </div>
+        </section>
+
+        <!-- calculator -->
+        <div id="calculator-content" style="display: none;">
+            <div class="title-calcu">
+                <p>CALCULATOR</p>
+                <h1>Calculate <span>Your Daily Needs</span></h1>
+            </div>
+            <div class="main-diet">
+                <div class="choose-calcu" id="choose-calcu">
+                    <h2>Choose Your <span>Calculator</span></h2>
+                    <div id="overlay-calcu" class="overlayCalcu">
+                        <div id="overlay-calorie-content" class="overlayCalcu-content">
+                            <!-- <h3>Calorie Calculator</h3> -->
+                            <form id="calorie-form" class="calorie-form">
+                                <div class="button-gender">
+                                    <!-- <label for="gender">Gender:</label> -->
+                                    <div class="gender-buttons">
+                                        <button type="button" id="male-calorie" class="gender-button" data-gender="male">Male</button>
+                                        <button type="button" id="female-calorie" class="gender-button" data-gender="female">Female</button>
+                                    </div>
+                                </div>
+                                <div class="input-form"> 
+                                    <!-- <input type="hidden" id="gender-calorie" name="gender"> -->
+                                     <div class="weight-box">
+                                         <label for="weight">Weight (kg):</label>
+                                         <input type="text" id="weight-calorie" name="weight">
+                                     </div>
+                                     <div class="height-box">
+                                         <label for="height">Height (cm):</label>
+                                         <input type="text" id="height-calorie" name="height" required>
+                                     </div>
+                                     <div class="age-box">
+                                         <label for="age">Age:</label>
+                                         <input type="text" id="age-calorie" name="age" required>
+                                     </div>
+                                </div>
+                                <button type="button" id="calculate-calorie" onclick="calculateBmi()" >Calculate</button>
+                            </form>
+                        </div>
+                        <div id="overlay-bmi-content" class="overlayCalcu-content">
+                            <form id="bmi-form" class="calorie-form">
+                                <div class="button-gender">
+                                    <!-- <label for="gender">Gender:</label> -->
+                                    <div class="gender-buttons">
+                                        <button type="button" id="male-bmi" class="gender-button" data-gender="male">Male</button>
+                                        <button type="button" id="female-bmi" class="gender-button" data-gender="female">Female</button>
+                                    </div>
+                                </div>
+                                <div class="input-form"> 
+                                    <!-- <input type="hidden" id="gender-calorie" name="gender"> -->
+                                     <div class="weight-box">
+                                         <label for="weight">Weight (kg):</label>
+                                         <input type="text" id="weight-bmi" name="weight">
+                                     </div>
+                                     <div class="height-box">
+                                         <label for="height">Height (cm):</label>
+                                         <input type="text" id="height-bmi" name="height" required>
+                                     </div>
+                                     <div class="age-box">
+                                         <label for="age">Age:</label>
+                                         <input type="text" id="age-bmi" name="age" required>
+                                     </div>
+                                </div>
+                                <button type="button" id="calculate-bmi">Calculate</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-calcu" id="display-calcu">
+                    <h2>Displaying Your <span>Result</span></h2>
+                    <div id="overlay-result" class="overlayCalcu">
+                        <div class="result-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="calcu-section">
+                <div class="calorie-box">
+                    <img src="./Assets/DietHealth/icon-Diet.png" width="48px" alt="icon">
+                    <h4>Calorie Calculator</h4>
+                    <button class="seemore-button" id="see-more-calorie">See More</button>
+                </div>
+                <div class="bmi-box">
+                    <img src="./Assets/DietHealth/icon-Diet.png" width="48px" alt="icon">
+                    <h4>BMI Calculator</h4>
+                    <button class="seemore-button" id="see-more-bmi">See More</button>
+                </div>
+            </div>
+        </div>
+        
+        
+       
+    </main>
+    <footer>
+        <div class="footer-info">
+            <div class="logo">
+                <span style="color: rgb(255, 255, 255);">Nu</span>Care
+            </div>
+            <div class="right-information">
+                <div class="information">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">Blogs & News</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="company">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li><a href="#"><img src="./Assets/icon/Instagram-white.svg" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="./Assets/icon/X-white.svg" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="./Assets/icon/Tiktok-white.svg" alt="TikTok"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./Js/dietPage.js"></script>
+    <script src="./Js/calculatorPage.js"></script>
+</body>
+</html>

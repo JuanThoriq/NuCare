@@ -1,0 +1,304 @@
+/* Menu */
+.menu-link {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    /* background-color: #e0e0e0; */
+    border-radius: 5px;
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+.menu-link.active {
+    padding: 10px 30px;
+    border-radius: 20px;
+    max-width: 103px;
+    width: 100%;
+    background-color: #05B98A;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.category-menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 24px 120px;
+    /* margin-right: 152px; */
+}
+
+.calcu-menu a{
+    font-weight: 600;
+}
+
+.diet-menu a{
+    padding: 10px 30px;
+    border-radius: 20px;
+    max-width: 103px;
+    width: 100%;
+    background-color: #05B98A;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* main */
+.diet-information {
+    align-items: center;
+    /* padding: 2rem; */
+    justify-content: center;
+}
+
+.title-diet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 56px;
+}
+
+.title-diet p{
+    color: #05B98A;
+    font-weight: 800;
+}
+
+.diet-information h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 1rem;
+    max-width: 511px;
+    width: 100%;
+}
+
+.diet-information h1 span {
+    color: #05B98A;
+}
+
+.main-diet{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 24px;
+    padding: 24px 120px;
+    
+}
+
+.choose-diet {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    box-shadow: 0px 2px 20px #8888883b;
+    max-height: 464px;
+    border-radius: 20px;
+    max-width: 590px;
+    width: 100%;
+
+}
+
+.choose-diet h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.choose-diet h2 span {
+    color: #1ebea5;
+}
+
+.hero-diet{
+    align-items: center;
+    justify-content: center;
+    /* max-height: 374px; */
+    height: 100%;
+    max-width: 590px;
+    width: 100%;
+    /* background-color: #05B98A; */
+}
+
+.hero-diet img{
+    /* max-height: 490px; */
+    height: 100%;
+    /* width: 100%; */
+    bottom: 0;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #b60000;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.overlay-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 90%; 
+    max-width: 800px; /* Batasi lebar maksimum overlay */
+    max-height: 80%; /* Batasi tinggi maksimum overlay */
+    overflow-y: auto; /* Tambahkan scroll jika konten melebihi tinggi maksimum */
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.overlay-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.overlay-content h1 span {
+    color: #05B98A;
+}
+
+.overlay-content h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.overlay-content p {
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000;
+}
+
+.overlay-content ul {
+    margin-top: 0;
+    padding-left: 20px;
+    color: #000;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.overlay-content li {
+    margin-bottom: 5px;
+    text-align: justify;
+    font-size: 16px;
+    
+}
+
+.diet-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0; /* Ubah padding horizontal sesuai kebutuhan */
+}
+
+/* Container Carousel */
+.carousel-track-container {
+    overflow: hidden;
+    width: 80%;
+    /* max-width: 1440px; */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin: 0; /* Hilangkan margin agar ketiga kotak utama tidak terlalu jauh */
+}
+
+.carousel-slide {
+    min-width: 150px; /* Sesuaikan dengan lebar minimum */
+    overflow: hidden;
+    margin: 0 12px; /* Sesuaikan margin agar terdapat ruang di antara slide */
+    flex: 0 0 calc(25% - 24px); /* Ubah agar hanya tampil 3 slide pada suatu waktu */
+    max-width: calc(33.33% - 24px); /* Batasi lebar maksimum agar tidak terlalu melebar */
+}
+
+.carousel-track-container ul {
+    list-style-type: none;
+}
+
+
+.diet-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Ubah sesuai kebutuhan */
+    width: 100%;
+    height: 100%; /* Sesuaikan agar kotak menjadi lebih persegi */
+    background-color: #FEFBF2;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.diet-box h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #05B98A;
+}
+
+.seemore-button {
+    padding: 8px 20px; /* Sesuaikan padding vertikal */
+    margin-top: 8px; /* Sesuaikan jarak antara teks dan tombol */
+    background-color: #1ebea5;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    max-width: 1440px;
+}
+
+.left-button {
+    left: 110px;
+}
+
+.right-button {
+    right: 110px;
+}
+
+.diet-box h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #05B98A;
+}
+
+.seemore-button {
+    padding: 0.5px 20px;
+    background-color: #1ebea5;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seemore-button:hover {
+    background-color: #18a180;
+}
+
