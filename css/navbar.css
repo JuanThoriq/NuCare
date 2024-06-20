@@ -39,11 +39,7 @@ header {
     align-items: center;
     padding: 16px 120px;
     background-color: var(--white-color);
-    top: 0;
-    position: sticky;
 }
-
-
 
 header nav{
     position: sticky;
@@ -70,10 +66,25 @@ header nav ul li {
     margin-left: 1rem;
 }
 
-nav ul li a:hover {
+.navbar a:hover {
     color: var(--primary-color);
-    transition: all 0.3s ease-in-out;
-    text-decoration: underline;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--primary);
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
 }
 
 .burger-menu {

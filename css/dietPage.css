@@ -189,8 +189,8 @@ nav ul li a {
     background-color: #fff;
     padding: 20px;
     width: 90%; 
-    max-width: 800px; /* Batasi lebar maksimum overlay */
-    max-height: 80%; /* Batasi tinggi maksimum overlay */
+    max-width: 800px; /* lebar maksimum overlay */
+    max-height: 80%; /* tinggi maksimum overlay */
     overflow-y: auto; /* Tambahkan scroll jika konten melebihi tinggi maksimum */
     border-radius: 8px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
@@ -276,7 +276,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px; /* Ubah sesuai kebutuhan */
+    padding: 20px; 
     width: 100%;
     height: 100%; /* Sesuaikan agar kotak menjadi lebih persegi */
     background-color: #FEFBF2;
