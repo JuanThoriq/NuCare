@@ -215,7 +215,7 @@ function sendMessage() {
         const userMessage = document.createElement('div');
         userMessage.classList.add('chat-message', 'user-message');
         userMessage.innerHTML = `
-            <img src="./Assets/HealthCondition/chat.png.png" alt="User" class="chat-avatar">
+            <img src="./Assets/HealthCondition/user_chat.png" alt="User" class="chat-avatar">
             <div class="chat-text">${message}</div>
         `;
 
