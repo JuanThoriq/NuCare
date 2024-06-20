@@ -55,6 +55,11 @@ footer {
     color: var(--white-color);
     font-size: var(--m-font-size);
     font-weight: var(--font-regular);
+    transition: color 0.3s ease-out;
+}
+
+.footer-menu a:hover {
+    color: var(--primary-color);
 }
 
 .item-3 .footer-menus {

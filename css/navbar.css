@@ -20,9 +20,6 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
-    margin-left: 1rem;
-}
 
 nav ul li a {
     text-decoration: none;
@@ -32,7 +29,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #1ebea5;
+    color: var(--primary-color);
     transition: all 0.4s ease-in-out;
 }
 
