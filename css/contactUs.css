@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+ 
+    --primary-color: #05B98A;
+    --green--secondary-color: #E3F3EC;
+    --khaki--secondary-color: #FEFBF2;
+    --black-color: black;
+    --white-color: white;
+
+   
+    --font-poppins: "Poppins", sans-serif;
+
+    
+    --xxxl-font-size: 64px;
+    --xxl-font-size: 48px;
+    --xl-font-size: 40px;
+    --l-font-size: 24px;
+    --m-font-size: 20px;
+    --s-font-size: 16px;
+    --xs-font-size: 14px;
+
+   
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+}
+
+* {
+    font-family: var(--font-poppins);
+}
+
+.title-contact{
+    color: var(--primary-colorry);
+    text-align: center;
+    line-height: 150%;
+    font-weight:800;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+
+
+.mainForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 50px 50px;
+}
+
+form:hover {
+    box-shadow: 0 6px 12px rgba(2, 109, 68, 0.274);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: var(--khaki--secondary-color);
+    font-weight: var(--font-bold);
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    display: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+
+@media (max-width: 768px) {
+    .title-contact{
+        font-size: 2em;
+    }
+    
+    form {
+        padding: 1.5em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .title-contact{
+        font-size: 1.5em;
+    }
+    
+
+    form {
+        padding: 1em;
+    }
+
+    button {
+        font-size: 0.8em;
+    }
+}
