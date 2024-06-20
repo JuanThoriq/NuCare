@@ -1,20 +1,12 @@
 /* header navbar */
 header {
-    /* margin-left: 152px;
-    margin-right: 152px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 120px;
+    padding: 16px 120px;
     background-color: #fff;
-    /* border-bottom: 1px solid #eaeaea; */
 }
 
-/* .logo {
-    font-size: 40px;
-    font-weight: 600;
-    color: #1ebea5;
-} */
 nav ul {
     display: flex;
     list-style: none;
@@ -26,6 +18,10 @@ nav ul li a {
     color: #333;
     font-size: 16px;
     font-weight: 700;
+}
+
+header nav ul li {
+    margin-left: 1rem;
 }
 
 nav ul li a:hover {
