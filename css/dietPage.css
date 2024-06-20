@@ -1,14 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+ 
+    --primary-color: #05B98A;
+    --green--secondary-color: #E3F3EC;
+    --khaki--secondary-color: #FEFBF2;
+    --black-color: black;
+    --white-color: white;
+
+   
+    --font-poppins: "Poppins", sans-serif;
+
+    
+    --xxxl-font-size: 64px;
+    --xxl-font-size: 48px;
+    --xl-font-size: 40px;
+    --l-font-size: 24px;
+    --m-font-size: 20px;
+    --s-font-size: 16px;
+    --xs-font-size: 14px;
+
+   
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+}
+
+* {
+    font-family: var(--font-poppins);
+}
+
 nav ul li a {
     gap: 24px;
 }
 
 /* Menu */
 .menu-link {
+    font-size: 14px;
+    font-weight: 600;
     padding: 10px 20px;
     text-decoration: none;
     color: #000;
     /* background-color: #e0e0e0; */
-    border-radius: 5px;
+    border-radius: 20px;
     transition: background-color 0.6s ease, color 0.6s ease;
 }
 
@@ -66,6 +102,7 @@ nav ul li a {
 .title-diet p{
     color: #05B98A;
     font-weight: 800;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .diet-information h1 {
@@ -74,6 +111,7 @@ nav ul li a {
     margin-bottom: 1rem;
     max-width: 511px;
     width: 100%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .diet-information h1 span {
@@ -100,6 +138,8 @@ nav ul li a {
     border-radius: 20px;
     max-width: 590px;
     width: 100%;
+    text-align: center;
+    font-weight: var(--font-bold);
 
 }
 
@@ -241,24 +281,25 @@ nav ul li a {
     height: 100%; /* Sesuaikan agar kotak menjadi lebih persegi */
     background-color: #FEFBF2;
     border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .diet-box h4 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: var(--font-bold);
     margin-bottom: 1rem;
     color: #05B98A;
 }
 
 .seemore-button {
-    padding: 8px 20px; /* Sesuaikan padding vertikal */
+    padding: 16px 32px; /* Sesuaikan padding vertikal */
     margin-top: 8px; /* Sesuaikan jarak antara teks dan tombol */
-    background-color: #1ebea5;
+    background-color: var(--primary-color);
     color: #fff;
     font-size: 16px;
+    font-weight: var(--font-semibold);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -274,6 +315,12 @@ nav ul li a {
     cursor: pointer;
     font-size: 2rem;
     max-width: 1440px;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px  rgba(0, 0, 0, 0.25);
+    height: 48px;
+    width: 48px;
 }
 
 .left-button {
@@ -284,23 +331,6 @@ nav ul li a {
     right: 110px;
 }
 
-.diet-box h4 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #05B98A;
-}
-
-.seemore-button {
-    padding: 0.5px 20px;
-    background-color: #1ebea5;
-    color: #fff;
-    font-size: 16px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
 .seemore-button:hover {
     background-color: #18a180;
