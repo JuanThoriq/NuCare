@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuCare | Nutrition Information</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/global.css"> 
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/healthcondition.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Nu<span style="color: #05B98A;">Care</span></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Basic Nutrition</a></li>
+                <li><a href="#">Health Condition</a></li>
+                <li><a href="#">Diet Health</a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu" id="burger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" id="close-btn">×</button>
+            <ul>
+                <li><a href="#">Basic Nutrition</a></li>
+                <li><a href="#">Health Condition</a></li>
+                <li><a href="#">Diet Health</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <a href="#">Contact Us</a>
+        </div>
+    </header>
+
+     <!-- Menu -->
+     <div class="category-menu">
+        <div class="diet-menu">
+            <a href="#" id="diet-link" class="menu-link" onclick="showSection('health')">Health</a>
+        </div>
+        <div class="calcu-menu">
+            <a href="#" id="calculator-link" class="menu-link" onclick="showSection('disease')">Disease</a>
+        </div>
+    </div>
+
+    
+
+    <div id="health" class="section">
+        <div class="title-health">
+            <p>NUTRITIONAL INFORMATION</p>
+            <h1>Personalized Nutrition for</h1>
+            <h1>Optimal <span>Health </span></h1>
+        </div>
+        <div class="container">
+
+            <!-- Toddler -->
+            <div class="card" onclick="openPopup('toddler')">
+                <div class="icon">
+                    <img src="./images/health_icon.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Toddler</h2>
+                    <p>1-3 Years</p>
+                </div>
+            </div>
+
+            <!-- Early Childhood -->
+            <div class="card" onclick="openPopup('earlychildhood')">
+                <div class="icon">
+                    <img src="./images/health_icon.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Early Childhood</h2>
+                    <p>4-8 Years</p>
+                </div>
+            </div>
+
+            <!-- Late Childhood -->
+            <div class="card" onclick="openPopup('latechildhood')">
+                <div class="icon">
+                    <img src="./images/health_icon.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Late Childhood</h2>
+                    <p>9-12 Years</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="openPopup('teenagers')">
+                <div class="icon">
+                    <img src="./images/health_icon.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>  Teenagers</h2>
+                    <p>13-19 Years</p>
+                </div>
+            </div>
+            <div class="card" onclick="openPopup('adults')">
+                <div class="icon">
+                    <img src="./images/health_icon.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Adults</h2>
+                    <p>20-64 Years</p>
+                </div>
+            </div>
+            <div class="card" onclick="openPopup('seniors')">
+                <div class="icon">
+                    <img src="./images/health_icon.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Seniors</h2>
+                    <p>65+ Years</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DISEASE SECTION -->
+    <div id="disease" class="section">
+        <div class="title-health">
+            <p>DISEASE INFORMATION</p>
+            <h1>Understanding Nutritional </h1>
+            <h1>Health <span>Risks </span></h1>
+        </div>
+        <div class="container">
+            <!-- Diabetes -->
+            <div class="card" onclick="openDiseasePopup('diabetes')">
+                <div class="icon">
+                    <img src="./images/disease.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Diabetes</h2>
+                </div>
+            </div>
+
+            <!-- Anemia -->
+            <div class="card" onclick="openDiseasePopup('anemia')">
+                <div class="icon">
+                    <img src="./images/disease.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Anemia</h2>
+                </div>
+            </div>
+
+            <!-- Osteoporosis -->
+            <div class="card" onclick="openDiseasePopup('osteoporosis')">
+                <div class="icon">
+                    <img src="./images/disease.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Osteoporosis</h2>
+                </div>
+            </div>
+
+            <!-- Obesity -->
+            <div class="card" onclick="openDiseasePopup('obesity')">
+                <div class="icon">
+                    <img src="./images/disease.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Obesity</h2>
+                </div>
+            </div>
+
+            <!-- Stunting -->
+            <div class="card" onclick="openDiseasePopup('stunting')">
+                <div class="icon">
+                    <img src="./images/disease.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Stunting</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popup-text"></div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="footer--section">
+            <div class="footer-left--section">
+                <a href="./index.html" class="logo">Nu<span class="highlight">Care</span></a>
+            </div>
+
+            <div class="footer-right--section">
+                <div class="footer-right-items item-1">
+                    <h2 class="footer-right-title">Information</h2>
+                    <ul class="footer-menus">
+                        <li class="footer-menu">
+                            <a href="">Blogs & News</a>
+                        </li>
+                        <li class="footer-menu">
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-right-items item-2">
+                    <h2 class="footer-right-title">Company</h2>
+                    <ul class="footer-menus">
+                        <li class="footer-menu">
+                            <a href="">About Us</a>
+                        </li>
+                        <li class="footer-menu">
+                            <a href="">Products</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-right-items item-3">
+                    <h2 class="footer-right-title">Social Media</h2>
+                    <ul class="footer-menus">
+                        <li class="footer-menu">
+                            <a href=""><img src="./Assets/LandingPage/Instagram.svg" alt=""></a>
+                        </li>
+                        <li class="footer-menu">
+                            <a href=""><img src="./Assets/LandingPage/X.svg" alt=""></a>
+                        </li>
+                        <li class="footer-menu">
+                            <a href=""><img src="./Assets/LandingPage/Tiktok.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="./js/healthCondition.js"></script>
+</body>
+</html>
