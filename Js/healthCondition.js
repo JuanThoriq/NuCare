@@ -197,5 +197,50 @@ function closePopup() {
     document.getElementById('popup').style.display = 'none';
 }
 
+function openChat() {
+    document.getElementById('chat-popup').style.display = 'flex';
+}
+
+function closeChat() {
+    document.getElementById('chat-popup').style.display = 'none';
+}
+
+function sendMessage() {
+    const input = document.getElementById('chat-input');
+    const message = input.value.trim();
+
+    if (message) {
+        const chatBody = document.querySelector('.chat-body');
+
+        const userMessage = document.createElement('div');
+        userMessage.classList.add('chat-message', 'user-message');
+        userMessage.innerHTML = `
+            <img src="./Assets/HealthCondition/chat.png.png" alt="User" class="chat-avatar">
+            <div class="chat-text">${message}</div>
+        `;
+
+        chatBody.appendChild(userMessage);
+        input.value = '';
+        chatBody.scrollTop = chatBody.scrollHeight;
+        
+
+        // Simulate chatbot response
+        setTimeout(() => {
+            const botMessage = document.createElement('div');
+            botMessage.classList.add('chat-message');
+            botMessage.innerHTML = `
+                <img src="./Assets/HealthCondition/chat.png.png" alt="Robot" class="chat-avatar">
+                <div class="chat-text">Adopting a healthy lifestyle involves making consistent and conscious choices that promote overall well-being. Starting with a balanced diet, be sure to eat 
+                a variety of foods that include fruits, vegetables, whole grains, lean proteins, and healthy fats.</div>
+            `;
+
+            chatBody.appendChild(botMessage);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }, 1000);
+        
+    }
+    
+}
+
 // Initial display
 showSection('health');
