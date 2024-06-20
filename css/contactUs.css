@@ -32,15 +32,19 @@
     font-family: var(--font-poppins);
 }
 
-.title-contact{
-    color: var(--primary-colorry);
-    text-align: center;
-    line-height: 150%;
-    font-weight:800;
-    letter-spacing: .1em;
-    margin-top: 20px;
+body{
+    background-image: url(https://images.unsplash.com/photo-1657014513094-9103919ebe20?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
+.title-contact{
+    color: var(--white-color);
+    text-align: center;
+    line-height: 170%;
+    font-weight: var(--font-bold);
+    letter-spacing: .1em;
+    margin-top: 20px;
+    font-size: var(--xxl-font-size);
+}
 
 .mainForm {
     display: flex;
@@ -60,7 +64,7 @@ form {
 }
 
 form:hover {
-    box-shadow: 0 6px 12px rgba(2, 109, 68, 0.274);
+    box-shadow: 0 6px 12px rgb(0, 251, 255);
 }
 
 input, select, textarea {
