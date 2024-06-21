@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+ 
+    --primary-color: #05B98A;
+    --green--secondary-color: #E3F3EC;
+    --khaki--secondary-color: #FEFBF2;
+    --black-color: black;
+    --white-color: white;
+
+   
+    --font-poppins: "Poppins", sans-serif;
+
+    
+    --xxxl-font-size: 64px;
+    --xxl-font-size: 48px;
+    --xl-font-size: 40px;
+    --l-font-size: 24px;
+    --m-font-size: 20px;
+    --s-font-size: 16px;
+    --xs-font-size: 14px;
+
+   
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+}
+
+* {
+    font-family: var(--font-poppins);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fafafa, #ffffff, #05B98A);
+}
+
+main{
+    width: 350px;
+    height: 500px;
+    background: red;
+    overflow: hidden;
+    background: url(https://images.unsplash.com/photo-1497250681960-ef046c08a56e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)no-repeat center / cover;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+
+#chk{
+     display: none;
+}
+
+.signup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+label{
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+input{
+    width: 60%;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button{
+    width: 40%;
+    height: 40%;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: var(--primary-color);
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    transition: -2s ease-in;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover{
+    outline: #bdf4e6 auto;
+}
+
+.login{
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login label{
+    color: var(--primary-color);
+    font-weight: var(--font-bold);
+    transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+    transform: translateY(-500px);
+}
+
+#chk:checked ~ .login label{
+    transform: scale(1);
+}
+
+#chk:checked ~ .signup label{
+    transform: scale(.6);
+}
