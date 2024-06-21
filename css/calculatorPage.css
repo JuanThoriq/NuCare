@@ -137,7 +137,7 @@
 
 .result-content p {
     /* text-align: justify; */
-    text-align: center;
+    text-align: justify;
     padding: 24px 56px;
     color: #333;
     font-size: 1.2rem;
@@ -222,7 +222,7 @@
 }
 
 .gender-button.active {
-    background-color: #000000;
+    background-color: #018361;
     color: #fff;
     border: 1px solid #76a99b;
 }
@@ -247,6 +247,7 @@
     display: flex;
     gap: 36px;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .weight-box{
@@ -270,7 +271,7 @@ input{
     border: none;
     border-bottom: 2px solid black;
     max-width: 118px;
-    width: 50%;
+    width: 87%;
     outline: none;
     text-align: center;
     font-size: 20px;
@@ -288,7 +289,7 @@ input{
 }
 
 .overlayCalcu-content button[type="button"] {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     color: var(--white-color);
     padding: 16px 32px;
     border: none;
@@ -298,6 +299,7 @@ input{
     font-size: var(--s-font-size);
     font-weight: var(--font-bold);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
 }
 
 .overlayCalcu-content button[type="button"]:hover {
