@@ -1,0 +1,170 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+     /* Colors */
+     --primary-color: #05B98A;
+     --green--secondary-color: #E3F3EC;
+     --khaki--secondary-color: #FEFBF2;
+     --black-color: black;
+     --white-color: white;
+ 
+     /* Font and Typography */
+     --font-poppins: "Poppins", sans-serif;
+ 
+     /* Font size */
+     --xxxl-font-size: 64px;
+     --xxl-font-size: 48px;
+     --xl-font-size: 40px;
+     --l-font-size: 24px;
+     --m-font-size: 20px;
+     --s-font-size: 16px;
+     --xs-font-size: 14px;
+     
+     /* Font weight */
+     --font-regular: 400;
+     --font-medium: 500;
+     --font-semibold: 600;
+     --font-bold: 700;
+     --font-extrabold: 800;
+}
+
+body {
+    font-family: var(--font-poppins);
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+section {
+    padding: 56px 120px;
+}
+
+/* Header Section */
+header {
+    padding: 16px 120px;
+}
+
+/* Switch Button */
+.switch--section {
+    display: inline-block;
+    position: absolute;
+    right: 120px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.switch-button {
+    padding: 10px 30px;
+    color: var(--black-color);
+    font-size: var(--xs-font-size);
+    font-weight: var(--font-bold);
+    background-color: var(--white-color);
+    border-radius: 20px;
+    border: none;
+}
+
+.switch-button:hover {
+    cursor: pointer;
+}
+
+.switch-button.active {
+    padding: 10px 30px;
+    color: var(--white-color);
+    font-size: var(--xs-font-size);
+    font-weight: var(--font-bold);
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+/* Title and Subtitle Section */
+.subtitle--section {
+    margin: auto;
+    text-align: center;
+    font-size: var(--xs-font-size);
+    color: var(--primary-color);
+    font-weight: var(--font-bold);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title--section {
+    margin: auto;
+    text-align: center;
+    font-size: var(--xxl-font-size);
+    color: var(--black-color);
+    font-weight: var(--font-bold);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Grid Section Nutrition */
+
+.grid-cards--section {
+    justify-content: center;
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(4, 282px);
+    grid-template-rows: repeat(4, 216px);
+    gap: 24px;
+}
+
+.grid-card-item {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.grid-card-item:hover {
+    transform: translateY(-10px);
+}
+
+.grid-card-item img {
+    width: 58px;
+    height: 58px;
+}
+
+.card-description h3, .card-description h5{
+    text-align: left;
+}
+
+.grid-item-title {
+    font-size: var(--m-font-size);
+    font-weight: var(--font-semibold);
+    color: var(--white-color);
+}
+
+.grid-item-subtitle {
+    font-size: var(--xs-font-size);
+    font-weight: var(--font-regular);
+    color: var(--khaki--secondary-color);
+}
+
+.item-1 {
+    background-color: var(--black-color);
+    grid-column: span 2;
+    border-top: 10px solid var(--primary-color);
+}
+
+.item-2 {
+    background-color: var(--black-color);
+    grid-row: span 2;
+    border-bottom: 10px solid var(--primary-color);
+}
+
+.item-8 {
+    background-color: var(--white-color);
+    text-align: center;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    grid-row: span 2;
+    grid-column: span 3;
+    border-bottom: 10px solid var(--primary-color);
+}
