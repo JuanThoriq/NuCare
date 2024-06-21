@@ -15,7 +15,9 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">Nu<span style="color: #05B98A;">Care</span></div>
+        <div class="logo">
+            <a href="./index.html" style="color: black;">Nu<span style="color: #05B98A;">Care</span></a>
+        </div>
         <nav class="navbar">
             <ul>
                 <li><a href="#" target="_blank">Basic Nutrition</a></li>
@@ -37,7 +39,7 @@
             </ul>
         </div>
         <div class="contact">
-            <a href="#">Contact Us</a>
+            <a href="./contactUs.html">Contact Us</a>
         </div>
     </header>
 
@@ -190,6 +192,33 @@
                 <div id="popup-text"></div>
             </div>
         </div>
+
+        <button class="chat-button" onclick="openChat()">
+        <img src="./Assets/HealthCondition/chat.png.png" alt="Chat Icon">
+    </button>
+
+    <div id="chat-popup" class="chat-popup">
+        <div class="chat-popup-content">
+            
+            <div class="chat-header">CHATBOT
+                <span class="close" onclick="closeChat()">&times;</span>
+            </div>
+
+            <div class="chat-body">
+                <div class="chat-message">
+                    <img src="./Assets/HealthCondition/chat.png.png" alt="Robot" class="chat-avatar">
+                    <div class="chat-text">
+                        <p>Hi there 👋🏻</p>
+                        <p>How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="Enter your message..." id="chat-input">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
     </main>
 
     <footer>
