@@ -145,19 +145,19 @@ header {
     color: var(--khaki--secondary-color);
 }
 
-.item-1 {
+.grid-card-item.item-1 {
     background-color: var(--black-color);
     grid-column: span 2;
     border-top: 10px solid var(--primary-color);
 }
 
-.item-2 {
+.grid-card-item.item-2 {
     background-color: var(--black-color);
     grid-row: span 2;
     border-bottom: 10px solid var(--primary-color);
 }
 
-.item-8 {
+.grid-card-item.item-8 {
     background-color: var(--white-color);
     text-align: center;
     font-size: 32px;
@@ -167,4 +167,57 @@ header {
     grid-row: span 2;
     grid-column: span 3;
     border-bottom: 10px solid var(--primary-color);
+}
+
+
+/* Game */
+.game .grid-cards--section .grid-card-item{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.game .item-1 {
+    border-top: 0px;
+}
+
+.game .item-2 {
+    border-bottom: 0px;
+}
+
+.game .item-8 {
+    border-bottom: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+.quiz-box--section {
+    width: 586px;
+    height: 456px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: var(--white-color);
+    z-index: 5;
+    text-align: center;
+    padding: 24px;
+    border-bottom: 10px solid var(--primary-color);
+    border-radius: 20px;
+}
+
+.quiz-title {
+    font-size: 32px;
+    color: var(--primary-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: var(--font-bold);
+}
+
+.quiz-subtitle {
+    font-size: 32px;
+    color: var(--black-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: var(--font-bold);
+    margin-top: 84px;
 }
