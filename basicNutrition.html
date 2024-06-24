@@ -41,11 +41,11 @@
 
     <main>
         <nav class="switch--section">
-            <button id="nutrition" class="switch-button active">Nutrition</button>
-            <button id="game" class="switch-button">Game</button>
+            <button type="button" id="nutritionbtn" class="switch-button active">Nutrition</button>
+            <button type="button" id="gamebtn" class="switch-button">Game</button>
         </nav>
 
-        <section class="nutrition">
+        <section id="nutritionSection" class="nutrition">
             <h5 class="subtitle--section">NUTRITION INFORMATION</h5>
             <h2 class="title--section">Understand the Fundamentals<br>     
                 of <span class="highlight">Nutrition</span></h5>
@@ -109,15 +109,15 @@
             </div>
         </section>
 
-        <section class="game hidden">
+        <section id="gameSection" class="game hidden">
             <h5 class="subtitle--section">GAMES</h5>
             <h2 class="title--section">Combines Entertainment<br>     
                 with <span class="highlight">Learning</span></h5>
 
-            <div class="quiz-box--section">
+            <!-- <div class="quiz-box--section">
                 <h2 class="quiz-title">Solve This Puzzle</h2>
                 <h2 class="quiz-subtitle">Displaying <span class="highlight">Puzzle</span><br>Game</h2>
-            </div>
+            </div> -->
 
             <div class="grid-cards--section">
                 <div class="grid-card-item item-1">
@@ -133,7 +133,8 @@
                     
                 </div>
                 <div class="grid-card-item item-5">
-                    
+                    <h2 class="quiz-title">Solve This Puzzle</h2>
+                    <h2 class="quiz-subtitle">Displaying <span class="highlight">Puzzle</span><br>Game</h2>    
                 </div>
                 <div class="grid-card-item item-6">
                     
@@ -142,6 +143,15 @@
                     
                 </div>
                 <div class="grid-card-item item-8">
+                    
+                </div>
+                <div class="grid-card-item item-9">
+                    
+                </div>
+                <div class="grid-card-item item-10">
+                    
+                </div>
+                <div class="grid-card-item item-11">
                     
                 </div>
 
@@ -198,5 +208,6 @@
         </nav>
     </footer>
     
+    <script src="./Js/basicNutrition.js"></script>
 </body>
 </html>

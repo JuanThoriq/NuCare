@@ -51,6 +51,7 @@ header {
     right: 120px;
     margin-bottom: 24px;
     margin-top: 24px;
+    z-index: 1000;
 }
 
 .switch-button {
@@ -61,6 +62,7 @@ header {
     background-color: var(--white-color);
     border-radius: 20px;
     border: none;
+    transition: background-color 0.3 ease;
 }
 
 .switch-button:hover {
@@ -106,6 +108,7 @@ header {
     grid-template-columns: repeat(4, 282px);
     grid-template-rows: repeat(4, 216px);
     gap: 24px;
+    grid-auto-rows: 216px;
 }
 
 .grid-card-item {
@@ -171,7 +174,12 @@ header {
 
 
 /* Game */
-.game .grid-cards--section .grid-card-item{
+
+.game {
+    position: relative;
+}
+
+.game .grid-cards--section .grid-card-item:not(.item-5){
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -180,38 +188,56 @@ header {
 }
 
 .game .item-2 {
+    grid-row: span 1;
     border-bottom: 0px;
 }
 
+.game .item-5 {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-color: var(--white-color);
+    border-bottom: 10px solid var(--primary-color);
+    /* transition: transform 0.3 ease; */
+}
+
 .game .item-8 {
+    grid-row: span 1;
+    grid-column: span 1;
     border-bottom: 0px;
+}
+
+.game .item-11 {
+    grid-column: span 2;
 }
 
 .hidden {
     display: none;
 }
 
-.quiz-box--section {
+/* .quiz-box--section {
     width: 586px;
     height: 456px;
     position: absolute;
-    left: 0;
-    right: 0;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0 auto;
     background-color: var(--white-color);
     z-index: 5;
     text-align: center;
     padding: 24px;
     border-bottom: 10px solid var(--primary-color);
     border-radius: 20px;
-}
+    right: 0;
+    left: 0;
+    top: 41%;
+    margin: 0 auto;
+    bottom: 50%;
+} */
 
 .quiz-title {
     font-size: 32px;
     color: var(--primary-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: var(--font-bold);
+    text-align: center;
 }
 
 .quiz-subtitle {
@@ -219,5 +245,6 @@ header {
     color: var(--black-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: var(--font-bold);
-    margin-top: 84px;
+    text-align: center;
+    margin-bottom: 120px;
 }
