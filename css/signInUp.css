@@ -138,6 +138,9 @@ button:hover{
 .back-button > a {
     text-decoration: none;
     color: var(--primary-color);
+    display: block;
+    width: 36px;
+    height: 36px;
 
 }
 
