@@ -141,6 +141,7 @@ nav ul li a {
     max-width: 590px;
     width: 100%;
     text-align: center;
+    border-bottom: 10px solid var(--primary-color);
     /* text-align: center;
     font-weight: var(--font-bold); */
 

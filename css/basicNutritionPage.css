@@ -62,7 +62,7 @@ header {
     background-color: var(--white-color);
     border-radius: 20px;
     border: none;
-    transition: background-color 0.3 ease;
+    transition: background-color 0.3s ease;
 }
 
 .switch-button:hover {
@@ -124,7 +124,8 @@ header {
 }
 
 .grid-card-item:hover {
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
+    transform: scale(1.05);
 }
 
 .grid-card-item img {

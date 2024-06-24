@@ -94,6 +94,7 @@
     width: 100%;
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
 .container {
@@ -204,8 +205,8 @@
 }
 
 .chat-button {
-    position: fixed;
-    bottom: 20px;
+    position: absolute;
+    bottom: 0px;
     right: 20px;
     background-color: #05B98A;
     border: none;
