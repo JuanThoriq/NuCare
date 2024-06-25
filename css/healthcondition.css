@@ -205,8 +205,8 @@
 }
 
 .chat-button {
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
+    bottom: 20px;
     right: 20px;
     background-color: #05B98A;
     border: none;
