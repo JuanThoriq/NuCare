@@ -17,7 +17,7 @@ NuCare (*Nutrition Care*) is a web-based platform that provides educational reso
 - **University project** to learn HTML, CSS, and JavaScript fundamentals.
 - **No Backend** implemented.
 - **Not responsive**, optimized for **1440px** screen width.
-- Worked on Figma for designing pages.
+- Worked on Figma for designing all pages.
 - Developed code for the Landing Page, Basic Nutrition feature, and partial work on Health Condition and Diet Health features.
 - Learned Git and GitHub for collaborative remote projects.
 
