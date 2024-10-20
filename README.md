@@ -24,4 +24,4 @@ NuCare (*Nutrition Care*) is a web-based platform that provides educational reso
 ## 🔗 Links
 - [Figma Prototype](https://www.figma.com/proto/CKdNDoPyUTAuTyZzQdqqOp/Prototype-Nucare?node-id=0-1&t=ljQnMQQyHGj2ARK3-1)
 - [FigJam Board](https://www.figma.com/board/3Lr1FfgRlvqDwl9bA0dt3S/NuCare?node-id=0-1&t=QKfcpsrUjpD4Po69-1)
-- [Live Demo](https://pallzzz.github.io/AOL_SE/)
+- [Live Demo](https://pallzzz.github.io/NuCare/)
